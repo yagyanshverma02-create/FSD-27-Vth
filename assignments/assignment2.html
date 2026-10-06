@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Booking System</title>
+  <link rel="stylesheet" href="assignment2.css">
+</head>
+<body>
+  <div class="header">
+    <img src="https://static.vecteezy.com/system/resources/previews/022/052/454/original/travel-bus-logo-template-with-white-background-suitable-for-your-design-need-logo-illustration-animation-etc-free-vector.jpg" alt="Bus Image" style="border-radius: 50%; width: 100px; height: 100px;">
+    <h1>Bus Booking System</h1>
+  </div>
+
+  <form>
+    <h2>User Information</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Username"><br>f1(.then(F2))
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Age"><br>
+
+    <label for="adhaar">Adhaar:</label>
+    <input type="text" id="adhaar" name="adhaar" placeholder="Adhaar"><br>
+
+    <label for="city">City:</label>
+    <select id="city" name="city">
+      <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Chandigarh">Chandigarh</option>
+    </select><br>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date"><br>
+
+    <h2>Bus Information</h2>
+    <h4>Select your bus type</h4><br>
+
+    <label for="busType">Bus Type:</label>
+    <select id="busType" name="busType">
+      <option value="AC">AC BUS: 2000 Rs.</option>
+      <option value="Non-AC">Non-AC BUS: 1500 Rs.</option>
+    </select><br>
+
+    <label for="seats">Number of Seats:</label>
+    <input type="number" id="seats" name="seats" placeholder="Number of Seats"><br>
+    <center>
+    <button style="background-color: green; color: white; border: none; padding: 10px 20px; cursor: pointer;" type="submit"  onclick="Book()">Book Now</button>
+    </center>
+  </form>
+  <script>
+    function Book() {
+      const username = document.getElementById('username').value;
+      const age = document.getElementById('age').value;
+      const adhaar = document.getElementById('adhaar').value;
+      const city = document.getElementById('city').value;
+      const date = document.getElementById('date').value;
+      const busType = document.getElementById('busType').value;
+      const seats = document.getElementById('seats').value;
+
+      if (!username || !age || !adhaar || !city || !date || !busType || !seats) {
+        alert("Please fill in all fields.");
+        return false; // Prevent form submission
+      }
+
+      let pricePerSeat = busType === 'AC' ? 2000 : 1500;
+      let totalPrice = pricePerSeat * seats;
+
+      alert(`Booking Successful!\n\nUsername: ${username}\nAge: ${age}\nAdhaar: ${adhaar}\nCity: ${city}\nDate: ${date}\nBus Type: ${busType}\nNumber of Seats: ${seats}\nTotal Price: Rs. ${totalPrice}`);
+    }
+  </script>
+</body>
+</html>

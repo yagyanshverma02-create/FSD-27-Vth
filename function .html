@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- function ka adv method  -->
+    <script>
+        function ad(x,y){
+            document.write(x+y+"<br>");
+            document.write(x-y+"<br>");
+            document.write(x/y+"<br>");        
+            document.write(x*y+"<br>");
+
+        }
+        ad(10,20);
+        const abes=()=>"hello"+"<br>";
+        document.write(abes());
+
+        const calculator=(a,b,operator)=>{
+            switch(operator){
+                case "+":
+                    return a+b;
+                case "-":
+                    return a-b;
+                case "*":
+                    return a*b;
+                case "/":
+                    if(b===0){
+                        return "division by zero is not allowed";
+                    }
+                    else{
+                        return a/b;
+                    }
+                default:
+                    return "invalid operator";
+            }
+        };
+        document.write(calculator(10,20,"-"));
+    </script>
+</body>
+</html>

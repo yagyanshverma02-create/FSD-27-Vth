@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: lightblue; padding: 20px; border: 50%;">
+    <h1 style="text-align: center; text-decoration: underline;">Online Shop</h1>
+    <h1>Rice: 500</h1>
+    <h1>Tea: 700</h1>
+    <h1>Coffee: 800 </h1>
+    <h1>Chocolate: 400</h1>
+    <h1>Milk: 300 </h1>
+    <center><button style="background-color:aqua; " onclick="buyNow()">Buy Now  </button></center>  
+    </div>
+    <script>
+        let images{
+            Rice:"https://static.vecteezy.com/system/resources/previews/037/349/469/non_2x/ai-generated-a-handful-of-long-grain-white-rice-spills-out-on-the-wooden-table-food-light-natural-colors-high-quality-ai-generative-photo.jpg"
+            Tea:
+            Coffee:
+            Chocolate:
+            Milk:
+        }
+        function buyNow() {
+            let a = prompt("Enter product name:");
+            let b = prompt("Enter quantity:");
+            document.write("Your total amount is: " + (a === "Rice" ? 500 * b : a === "Tea" ? 700 * b : a === "Coffee" ? 800 * b : a === "Chocolate" ? 400 * b : a === "Milk" ? 300 * b : "Invalid product") + "<br>");
+            
+        }
+    </script>
+    
+</body>
+</html>
