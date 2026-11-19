@@ -1,0 +1,84 @@
+:root {
+  /* Core Brand Colors */
+  --color-forest: #173D32;
+  --color-forest-dark: #0F2821;
+  --color-forest-hover: #123027;
+  --color-green: #315B49;
+  --color-green-light: #4A7A65;
+  --color-sage: #B7C9B2;
+  --color-sage-light: #Dce5da;
+  --color-sage-subtle: #EDF3EC;
+  --color-ivory: #F7F6F0;
+  --color-ivory-light: #FBFBF8;
+  --color-white: #FFFFFF;
+  --color-charcoal: #1F2421;
+  --color-charcoal-muted: #525C57;
+  --color-charcoal-subtle: #7A8680;
+  --color-border: #E5E3D8;
+  --color-border-dark: #D4D1C4;
+
+  /* Functional Status Colors */
+  --color-status-available: #173D32;
+  --color-status-pending: #C2821B;
+  --color-status-pending-bg: #FEF7ED;
+  --color-status-approved: #2E7D32;
+  --color-status-approved-bg: #EDF7EE;
+  --color-status-completed: #1E40AF;
+  --color-status-completed-bg: #EFF6FF;
+  --color-status-cancelled: #DC2626;
+  --color-status-cancelled-bg: #FEF2F2;
+  --color-status-expired: #6B7280;
+  --color-status-expired-bg: #F3F4F6;
+
+  /* Typography */
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  --text-6xl: 3.75rem;    /* 60px */
+
+  /* Spacing */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Shadows - Minimalist Luxury */
+  --shadow-sm: 0 1px 2px 0 rgba(23, 61, 50, 0.04);
+  --shadow-md: 0 4px 12px -2px rgba(23, 61, 50, 0.06), 0 2px 6px -1px rgba(23, 61, 50, 0.03);
+  --shadow-lg: 0 12px 28px -4px rgba(23, 61, 50, 0.08), 0 4px 12px -2px rgba(23, 61, 50, 0.04);
+  --shadow-xl: 0 20px 40px -6px rgba(23, 61, 50, 0.12);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --container-max: 1240px;
+  --header-height: 76px;
+}

@@ -1,0 +1,227 @@
+.donation-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 600px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-charcoal);
+  letter-spacing: 0.04em;
+}
+
+.required {
+  color: var(--color-status-cancelled);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-ivory-light);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-charcoal);
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--color-forest);
+  background-color: var(--color-white);
+  box-shadow: 0 0 0 3px rgba(23, 61, 50, 0.08);
+}
+
+.form-input--error {
+  border-color: var(--color-status-cancelled) !important;
+  background-color: #FEF2F2 !important;
+}
+
+.form-error {
+  font-size: 0.75rem;
+  color: var(--color-status-cancelled);
+  font-weight: 500;
+}
+
+.input-group-dual {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.input-group-dual .form-input {
+  flex: 1;
+}
+
+.select-unit {
+  width: 130px;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.field-icon {
+  position: absolute;
+  left: 0.85rem;
+  color: var(--color-charcoal-subtle);
+  pointer-events: none;
+}
+
+.form-input--icon {
+  padding-left: 2.35rem;
+}
+
+/* Dietary Tag selector */
+.tags-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+.tag-toggle-btn {
+  background-color: var(--color-ivory-light);
+  border: 1px solid var(--color-border);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-charcoal-muted);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tag-toggle-btn:hover {
+  border-color: var(--color-sage);
+}
+
+.tag-toggle-btn--active {
+  background-color: var(--color-forest);
+  color: var(--color-white);
+  border-color: var(--color-forest);
+}
+
+/* Preset photo selector */
+.preset-images-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  margin-top: var(--space-1);
+}
+
+@media (max-width: 600px) {
+  .preset-images-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.preset-image-card {
+  position: relative;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  height: 70px;
+  transition: all var(--transition-fast);
+}
+
+.preset-image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preset-image-card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 40, 33, 0.75);
+  color: var(--color-white);
+  font-size: 0.65rem;
+  padding: 2px 4px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preset-image-card--active {
+  border-color: var(--color-forest);
+  box-shadow: 0 0 0 2px var(--color-forest);
+}
+
+/* Safety pledge box */
+.form-safety-box {
+  background-color: var(--color-sage-subtle);
+  border: 1px solid var(--color-sage);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.safety-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  cursor: pointer;
+}
+
+.safety-checkbox-label input[type="checkbox"] {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-forest);
+}
+
+.safety-checkbox-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.safety-checkbox-text strong {
+  font-size: var(--text-xs);
+  color: var(--color-forest);
+}
+
+.safety-checkbox-text span {
+  font-size: 0.75rem;
+  color: var(--color-charcoal-muted);
+  line-height: 1.4;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--space-2);
+}
